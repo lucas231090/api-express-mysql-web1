@@ -37,19 +37,6 @@ class DepartmentRepository {
 
     return updatedDepartment[0];
   }
-
-  async delete(id) {
-    const result = await db.query(
-      `
-      DELETE FROM department
-      WHERE id = ?
-      ;
-    `,
-      [id]
-    );
-
-    return result;
-  }
 }
 
 module.exports = new DepartmentRepository();

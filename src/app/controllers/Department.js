@@ -34,19 +34,6 @@ class DepartmentController {
 
     response.status(200).json(updateDepartment);
   }
-
-  async delete(request, response) {
-    const { id } = request.params;
-
-    if (!id) {
-      return response.status(400).json({ error: "Invalid department id" });
-    }
-
-    await DepartmentRepository.delete(id);
-
-    // 204: Not Content
-    response.sendStatus(204);
-  }
 }
 
 module.exports = new DepartmentController();
