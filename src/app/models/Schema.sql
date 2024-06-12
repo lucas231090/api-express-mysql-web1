@@ -17,7 +17,7 @@ CREATE TABLE IF NOT EXISTS employee (
     transportAllowance BOOLEAN,
     hireDate TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
     department_id INT,
-    FOREIGN KEY (department_id) REFERENCES Department(id)
+    FOREIGN KEY (department_id) REFERENCES department(id)
 );
 
 SHOW TABLES;
