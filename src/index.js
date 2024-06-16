@@ -1,4 +1,5 @@
 const express = require("express");
+const cors = require("cors");
 const routes = require("./routes");
 const app = express();
 const path = require("path");
@@ -13,7 +14,7 @@ db.testConnection().catch((err) => {
   );
   process.exit(1);
 });
-
+app.use(cors());
 app.use(express.json());
 app.use(routes);
 
