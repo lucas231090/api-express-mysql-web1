@@ -4,7 +4,7 @@ const routes = require("./routes");
 const app = express();
 const path = require("path");
 const url = "http://localhost";
-const port = 3000;
+const port = 3001;
 
 const db = require("./app/models/ConnectDatabase");
 
