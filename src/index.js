@@ -27,5 +27,5 @@ app.get("/", (request, response) => {
 });
 
 app.listen(port, () => {
-  console.log(`O servidor está rodando em ${url} ${port}`);
+  console.log(`O servidor está rodando em ${url}:${port}`);
 });
