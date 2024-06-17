@@ -8,6 +8,10 @@ CREATE TABLE IF NOT EXISTS department (
     description TEXT
 );
 
+INSERT INTO department (name, description)
+VALUES ('Engenharia', 'Departamento responsável pela infraestrutura e inovação');
+
+
 CREATE TABLE IF NOT EXISTS employee (
     id INT AUTO_INCREMENT PRIMARY KEY,
     name VARCHAR(255),
@@ -21,5 +25,3 @@ CREATE TABLE IF NOT EXISTS employee (
 );
 
 SHOW TABLES;
-DESCRIBE employee;
-DESCRIBE department;
