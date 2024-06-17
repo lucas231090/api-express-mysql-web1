@@ -9,7 +9,7 @@ CREATE TABLE IF NOT EXISTS department (
 );
 
 INSERT INTO department (name, description)
-VALUES ('Engenharia', 'Departamento responsável pela infraestrutura e inovação');
+VALUES ('Engenharia', 'Departamento responsável pela infraestrutura');
 
 
 CREATE TABLE IF NOT EXISTS employee (
